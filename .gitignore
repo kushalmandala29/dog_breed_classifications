@@ -2,7 +2,7 @@ myenv/
 data/
 # dog_breed_classification/
 "
-
+__pycache__/
 
 
 
