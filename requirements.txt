@@ -1,7 +1,9 @@
-tensorflow
-numpy
-pandas
-matplotlib
-scikit-learn
-seaborn
-tqdm
+tensorflow==2.13.0
+numpy==1.26.1
+pandas==2.1.2
+matplotlib==3.8.1
+scikit-learn==1.5.2
+seaborn==0.13.0
+tqdm==4.67.0
+streamlit==1.26.0
+pillow==10.0.1
