@@ -86,5 +86,5 @@ class Models:
         test_features = self.extact_features(img_g)
         predg = self.model.predict(test_features)
 
-        return self.classes[np.argmax(predg[0])], round(np.max(predg[0])) * 100
+        return self.classes[np.argmax(predg[0])], np.max(predg[0]) * 100
         

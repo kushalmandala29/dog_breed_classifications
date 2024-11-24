@@ -3,6 +3,8 @@ data/
 # dog_breed_classification/
 
 __pycache__/
+config/__pycache__/
+
 
 
 

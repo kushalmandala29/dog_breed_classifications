@@ -77,19 +77,29 @@ def main():
                         # For demo purposes, we'll just show a placeholder text
                         with col2:
                             st.subheader("OUTPUT")
-                            st.text_area(
-                                "Detected bread of the dog:",
-                                value="Bread: "+bread,
-                                      
-                                height=100
-                            )
+                            if accuracy>50.0:
+                                st.success("Dog breed detected")
+                                st.text_area(
+                                    "Detected bread of the dog:",
+                                    value="Bread: "+bread,
+                                        
+                                    height=100
+                                )
+                            else:
+                                st.error("Dog breed not detected")
+                                st.text_area(
+                                    "Detected bread of the dog:",
+                                    value="the given picture is not a dog",
+                                        
+                                    height=100
+                                )
                             
                             # Add download button for the extracted text
                             
                             # Add confidence score (simulated)
                             st.metric(
                                 label="Confidence Score",
-                                value=f"{accuracy}%",
+                                value=f"{accuracy:.2f}%",
                             )
                             
             except Exception as e:
