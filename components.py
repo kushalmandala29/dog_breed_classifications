@@ -5,22 +5,21 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 # Disable oneDNN optimizations
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 from keras import Sequential
-from keras.callbacks import EarlyStopping
+# from keras.callbacks import EarlyStopping
 import numpy as np
-from keras.optimizers import Adam, SGD
-from keras.callbacks import ReduceLROnPlateau
-from keras.layers import Flatten,Dense,BatchNormalization,Activation,Dropout
+# from keras.optimizers import Adam, SGD
+# from keras.callbacks import ReduceLROnPlateau
+# from keras.layers import Flatten,Dense,BatchNormalization,Activation,Dropout
 from keras.layers import Lambda, Input, GlobalAveragePooling2D,BatchNormalization
-from keras.utils import to_categorical
+# from keras.utils import to_categorical
 # from keras import regularizers
 from tensorflow.keras.models import Model
 from tensorflow.keras.models import load_model
-from keras.applications.inception_v3 import InceptionV3, preprocess_input
-
-from keras.preprocessing.image import load_img
-from keras.applications.xception import Xception, preprocess_input
-from keras.applications.inception_resnet_v2 import InceptionResNetV2, preprocess_input
-from keras.applications.nasnet import NASNetLarge, preprocess_input
+from keras.applications.inception_v3 import InceptionV3
+# from keras.preprocessing.image import load_img
+from keras.applications.xception import Xception
+from keras.applications.inception_resnet_v2 import InceptionResNetV2
+from keras.applications.nasnet import NASNetLarge
 import pandas as pd
 from config.xception import xception_p
 # import os
