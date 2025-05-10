@@ -1,5 +1,5 @@
 
-# Neural Network-Based Breed Classification Project
+# Dog Breed Classification Project
 
 A deep learning-based dog breed classification system that can identify 120 different dog breeds with 92% accuracy. This project leverages multiple state-of-the-art CNN architectures and provides an easy-to-use web interface for breed identification.
 
